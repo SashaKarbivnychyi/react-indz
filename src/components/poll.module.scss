@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pollWrapper {
+  padding: 1em;
+  border: 1px red solid;
+  border-radius: 15px;
+
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: start;
+  gap: 10px;
+
+  cursor: pointer;
+
+  h3 {
+    padding: 0 0 0 10px;
+  }
+}
+
+.pollOptionsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: stretch;
+  gap: 5px;
+
+  width: calc(100% - 20px);
+  background: #ceeae3;
+  padding: 10px;
+
+  border-radius: 10px;
+}
+
+.pollOption {
+  border-radius: 5px;
+  padding: 10px;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: calc(100% - 20px);
+  position: relative;
+
+  * {
+    z-index: 2;
+  }
+
+  .percentage {
+    margin-left: auto;
+  }
+
+  .percentageBackground {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+
+    border-radius: 5px;
+
+    background: rgba(138, 43, 226, 0.31);
+  }
+}
